@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Header.css"
+import{Link} from 'react-router-dom'
 import { FaTelegram, FaInstagram, } from "react-icons/fa";
 import one from './images/zamon.svg'
 function Header() {
@@ -7,10 +8,10 @@ function Header() {
     <header className='header'>
         <div className='container'>
             <div className='header__container'>
-                <a className='logo' href="#"><img className='header__logo' src={one} alt="Logo"/></a>
+                <Link className='logo' to={"home"}><img className='header__logo' src={one} alt="Logo"/></Link>
                 <ul className='header__list'>
                     <li className='header__item'>
-                        <a className='header-list__link' href="#">Home</a>
+                        <Link className='header-list__link' to={"home"}>Home</Link>
                     </li>
                     <li className='header__item'>
                         <a className='header-list__link' href="#">About</a>
