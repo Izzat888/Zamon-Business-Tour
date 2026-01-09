@@ -18,11 +18,17 @@
     text-align: center;
     margin-left: 19%;
 }
+.tours__list{
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
 .tours__item{
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 320px;
     background: rgb(255, 255, 255);
-    box-shadow: 0px 6px 10px 8px rgb(223, 222, 222);
+    box-shadow: 0px 2px 4px 3px rgb(223, 222, 222);
     padding: 20px;
     border-radius: 25px;
 }
@@ -36,4 +42,99 @@ color: aliceblue;
 font-family: "Montserrat";
 font-weight: 500;
 font-size: 14px;
+margin-left: 35px;
 }
+.tours-list__title{
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 20px;
+    color: black;
+    margin-bottom: 10px;
+}
+.list__span{
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 20px;
+    color: #22b3c1;
+    margin-left: 100px;
+}
+.tours__span{
+    margin-left: 35px;
+}
+.tours-list__text{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 15px;
+    font-family: "Montserrat";
+    font-weight: 800px;
+    margin-bottom: 20px;
+    color: black;
+    opacity: 0.4;
+}
+.tours-list-one__title{
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+.tours-list-one__text{
+    align-items: center;
+    display: flex;
+    gap: 5px;
+    color: black;
+    opacity: 0.4;
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+.tours-list-two__text{
+    align-items: center;
+    display: flex;
+    gap: 5px;
+    color: black;
+    opacity: 0.4;
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+.tours-list-three__text{
+    align-items: center;
+    display: flex;
+    gap: 5px;
+    color: black;
+    opacity: 0.4;
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 15px;
+    margin-bottom: 40px;
+}
+.img__one{
+    width: 320px;
+    height: 360px;
+    position: absolute;
+    margin-top: -70px;
+    margin-left: -160px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    z-index: -1;
+}
+.swiper__btn,
+.swiper__btn {
+  width: 40px;
+  height: 40px;
+  background: #333;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 20px;
+  display: inline-flex;
+}
+
+
