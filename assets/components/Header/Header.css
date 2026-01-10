@@ -1,35 +1,43 @@
-.header{
-   position: fixed;
-   left: 0;
-   right: 0;
-   top: 0;
-   background: #22b3c1;
-   height: 80px;
-   z-index: 1;
+.header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 80px;
+    z-index: 99999;
+    background: rgba(34, 179, 193, 0.6);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
-.header__container{
-display: flex;
-justify-content: space-between;
-align-items: center;
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.header__list{
+
+.header__list {
     display: flex;
     gap: 40px;
 }
-.header__logo{
+
+.header__logo {
     width: 159px;
     height: 56;
     cursor: pointer;
 }
-.icon{
+
+.icon {
     display: flex;
     gap: 20px;
 }
-.header-icon__link{
-color: #ffffff;
-cursor: pointer;
+
+.header-icon__link {
+    color: #ffffff;
+    cursor: pointer;
 }
-.header-list__link{
+
+.header-list__link {
     font-family: "Montserrat";
     font-weight: 600;
     font-size: 16px;

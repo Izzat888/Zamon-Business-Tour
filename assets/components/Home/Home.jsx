@@ -61,7 +61,7 @@ const Home = () => {
           </div>
           <div className="home__box">
             <div className="home__item">
-              <FaUser className='icon' size={24}/>
+              <FaUser className='icon' size={24} />
               <div>
                 <h2 className="icon__title">Population:</h2>
                 <p className="icon__text">{slides[index].population}</p>
@@ -69,7 +69,7 @@ const Home = () => {
             </div>
 
             <div className="home__item">
-              <FaGlobe className='icon' size={24}/>
+              <FaGlobe className='icon' size={24} />
               <div>
                 <h2 className="icon__title">Territory:</h2>
                 <p className="icon__text">{slides[index].territory}</p>
@@ -77,7 +77,7 @@ const Home = () => {
             </div>
 
             <div className="home__item">
-              <FaHome className='icon' size={24}/>
+              <FaHome className='icon' size={24} />
               <div>
                 <h2 className="icon__title">AVG Price:</h2>
                 <p className="icon__text">{slides[index].price}</p>

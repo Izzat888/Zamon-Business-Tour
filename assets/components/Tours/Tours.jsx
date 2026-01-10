@@ -1,11 +1,18 @@
 import React, { useRef, useEffect, useState } from 'react'
 import "./Tours.css"
 import one from "./images/list1.jpg"
+import two from "./images/dubai2.webp"
+import three from "./images/antalya2.webp"
+import four from "./images/sharm2.jpg"
+import five from "./images/usa.jpg"
+import six from "./images/england.avif"
+import seven from "./images/canada.avif"
+import eight from "./images/europion.webp"
 import { FaUsers, FaCar, FaPlane } from "react-icons/fa"
 import { MdHome } from "react-icons/md"
 
 import { Swiper, SwiperSlide } from "swiper/react"
-import { Autoplay, HashNavigation, Navigation } from "swiper/modules"
+import { Autoplay, Navigation } from "swiper/modules"
 
 import "swiper/css"
 import "swiper/css/hash-navigation"
@@ -17,7 +24,7 @@ const Tours = () => {
   const [swiperReady, setSwiperReady] = useState(false)
 
   useEffect(() => {
-    setSwiperReady(true) // Swiper render bo‘lganidan keyin refs tayyor bo‘ladi
+    setSwiperReady(true)
   }, [])
 
   return (
@@ -30,15 +37,15 @@ const Tours = () => {
           </p>
 
           <Swiper
-            modules={[Autoplay, HashNavigation, Navigation]}
+            modules={[Autoplay, Navigation]}
             spaceBetween={170}
             slidesPerView={3}
             loop={true}
             autoplay={{
-              delay: 3000,
+              delay: 2000,
               disableOnInteraction: false,
             }}
-            hashNavigation={{ watchState: true }}
+
             navigation={swiperReady ? { prevEl: prevRef.current, nextEl: nextRef.current } : false}
             breakpoints={{
               320: { slidesPerView: 1 },
@@ -46,7 +53,7 @@ const Tours = () => {
               1024: { slidesPerView: 3 },
             }}
             onSwiper={(swiper) => {
-              // Ref elementlar render bo‘lgandan keyin navigation ishlaydi
+
               if (swiperReady) {
                 swiper.params.navigation.prevEl = prevRef.current
                 swiper.params.navigation.nextEl = nextRef.current
@@ -63,12 +70,12 @@ const Tours = () => {
                     <img className='img__one' src={one} alt="Istanbul" />
                   </div>
                   <h3 className='tours-list__title'>Istanbul <span className='list__span'>420$</span></h3>
-                  <p className='tours-list__text'><FaUsers size={20}/> 234 Check Ins <span>/person</span></p>
+                  <p className='tours-list__text'><FaUsers size={20} /> 234 Check Ins <span>/person</span></p>
                   <hr />
                   <p className='tours-list-one__title'>Deal Includes:</p>
-                  <p className='tours-list-one__text'><FaCar size={20}/> 5 Days Trip › Hotel Included</p>
-                  <p className='tours-list-two__text'><FaPlane size={20}/> Airplane Bill Included</p>
-                  <p className='tours-list-three__text'><MdHome size={20}/> Daily Places Visit</p>
+                  <p className='tours-list-one__text'><FaCar size={20} /> 5 Days Trip › Hotel Included</p>
+                  <p className='tours-list-two__text'><FaPlane size={20} /> Airplane Bill Included</p>
+                  <p className='tours-list-three__text'><MdHome size={20} /> Daily Places Visit</p>
                   <button className='tours__btn'>Make A Reservation</button>
                 </li>
               </ul>
@@ -79,15 +86,15 @@ const Tours = () => {
               <ul className='tours__list'>
                 <li className='tours__item'>
                   <div className='tours__bg'>
-                    <img className='img__one' src={one} alt="Istanbul" />
+                    <img className='img__one' src={two} alt="Dubai" />
                   </div>
-                  <h3 className='tours-list__title'>Istanbul <span className='list__span'>420$</span></h3>
-                  <p className='tours-list__text'><FaUsers size={20}/> 234 Check Ins <span>/person</span></p>
+                  <h3 className='tours-list__title'>Dubai <span className='list__span'>700$</span></h3>
+                  <p className='tours-list__text'><FaUsers size={20} /> 300 Check Ins <span>/person</span></p>
                   <hr />
                   <p className='tours-list-one__title'>Deal Includes:</p>
-                  <p className='tours-list-one__text'><FaCar size={20}/> 5 Days Trip › Hotel Included</p>
-                  <p className='tours-list-two__text'><FaPlane size={20}/> Airplane Bill Included</p>
-                  <p className='tours-list-three__text'><MdHome size={20}/> Daily Places Visit</p>
+                  <p className='tours-list-one__text'><FaCar size={20} /> 5 Days Trip › Hotel Included</p>
+                  <p className='tours-list-two__text'><FaPlane size={20} /> Airplane Bill Included</p>
+                  <p className='tours-list-three__text'><MdHome size={20} /> Daily Places Visit</p>
                   <button className='tours__btn'>Make A Reservation</button>
                 </li>
               </ul>
@@ -98,15 +105,15 @@ const Tours = () => {
               <ul className='tours__list'>
                 <li className='tours__item'>
                   <div className='tours__bg'>
-                    <img className='img__one' src={one} alt="Istanbul" />
+                    <img className='img__one' src={three} alt="Antalya" />
                   </div>
-                  <h3 className='tours-list__title'>Istanbul <span className='list__span'>420$</span></h3>
-                  <p className='tours-list__text'><FaUsers size={20}/> 234 Check Ins <span>/person</span></p>
+                  <h3 className='tours-list__title'>Antalya <span className='list__span'>999$</span></h3>
+                  <p className='tours-list__text'><FaUsers size={20} /> 500 Check Ins <span>/person</span></p>
                   <hr />
                   <p className='tours-list-one__title'>Deal Includes:</p>
-                  <p className='tours-list-one__text'><FaCar size={20}/> 5 Days Trip › Hotel Included</p>
-                  <p className='tours-list-two__text'><FaPlane size={20}/> Airplane Bill Included</p>
-                  <p className='tours-list-three__text'><MdHome size={20}/> Daily Places Visit</p>
+                  <p className='tours-list-one__text'><FaCar size={20} /> 5 Days Trip › Hotel Included</p>
+                  <p className='tours-list-two__text'><FaPlane size={20} /> Airplane Bill Included</p>
+                  <p className='tours-list-three__text'><MdHome size={20} /> Daily Places Visit</p>
                   <button className='tours__btn'>Make A Reservation</button>
                 </li>
               </ul>
@@ -117,15 +124,15 @@ const Tours = () => {
               <ul className='tours__list'>
                 <li className='tours__item'>
                   <div className='tours__bg'>
-                    <img className='img__one' src={one} alt="Istanbul" />
+                    <img className='img__one' src={four} alt="Sharm El Sheikh" />
                   </div>
-                  <h3 className='tours-list__title'>Istanbul <span className='list__span'>420$</span></h3>
-                  <p className='tours-list__text'><FaUsers size={20}/> 234 Check Ins <span>/person</span></p>
+                  <h3 className='tours-list__title'>Sharm El-Sheikh <span className='listt__span'>800$</span></h3>
+                  <p className='tours-list__text'><FaUsers size={20} /> 200 Check Ins <span>/person</span></p>
                   <hr />
                   <p className='tours-list-one__title'>Deal Includes:</p>
-                  <p className='tours-list-one__text'><FaCar size={20}/> 5 Days Trip › Hotel Included</p>
-                  <p className='tours-list-two__text'><FaPlane size={20}/> Airplane Bill Included</p>
-                  <p className='tours-list-three__text'><MdHome size={20}/> Daily Places Visit</p>
+                  <p className='tours-list-one__text'><FaCar size={20} /> 5 Days Trip › Hotel Included</p>
+                  <p className='tours-list-two__text'><FaPlane size={20} /> Airplane Bill Included</p>
+                  <p className='tours-list-three__text'><MdHome size={20} /> Daily Places Visit</p>
                   <button className='tours__btn'>Make A Reservation</button>
                 </li>
               </ul>
@@ -136,15 +143,15 @@ const Tours = () => {
               <ul className='tours__list'>
                 <li className='tours__item'>
                   <div className='tours__bg'>
-                    <img className='img__one' src={one} alt="Istanbul" />
+                    <img className='img__one' src={five} alt="USA" />
                   </div>
-                  <h3 className='tours-list__title'>Istanbul <span className='list__span'>420$</span></h3>
-                  <p className='tours-list__text'><FaUsers size={20}/> 234 Check Ins <span>/person</span></p>
+                  <h3 className='tours-list__title'>USA <span className='list__span'></span></h3>
+                  <p className='tours-list__text'><FaUsers size={20} /> 400 Check Ins <span>/person</span></p>
                   <hr />
                   <p className='tours-list-one__title'>Deal Includes:</p>
-                  <p className='tours-list-one__text'><FaCar size={20}/> 5 Days Trip › Hotel Included</p>
-                  <p className='tours-list-two__text'><FaPlane size={20}/> Airplane Bill Included</p>
-                  <p className='tours-list-three__text'><MdHome size={20}/> Daily Places Visit</p>
+                  <p className='tours-list-one__text'><FaCar size={20} /> 5 Days Trip › Hotel Included</p>
+                  <p className='tours-list-two__text'><FaPlane size={20} /> Airplane Bill Included</p>
+                  <p className='tours-list-three__text'><MdHome size={20} /> Daily Places Visit</p>
                   <button className='tours__btn'>Make A Reservation</button>
                 </li>
               </ul>
@@ -155,15 +162,15 @@ const Tours = () => {
               <ul className='tours__list'>
                 <li className='tours__item'>
                   <div className='tours__bg'>
-                    <img className='img__one' src={one} alt="Istanbul" />
+                    <img className='img__one' src={six} alt="England" />
                   </div>
-                  <h3 className='tours-list__title'>Istanbul <span className='list__span'>420$</span></h3>
-                  <p className='tours-list__text'><FaUsers size={20}/> 234 Check Ins <span>/person</span></p>
+                  <h3 className='tours-list__title'>England <span className='list__span'></span></h3>
+                  <p className='tours-list__text'><FaUsers size={20} /> 234 Check Ins <span>/person</span></p>
                   <hr />
                   <p className='tours-list-one__title'>Deal Includes:</p>
-                  <p className='tours-list-one__text'><FaCar size={20}/> 5 Days Trip › Hotel Included</p>
-                  <p className='tours-list-two__text'><FaPlane size={20}/> Airplane Bill Included</p>
-                  <p className='tours-list-three__text'><MdHome size={20}/> Daily Places Visit</p>
+                  <p className='tours-list-one__text'><FaCar size={20} /> 5 Days Trip › Hotel Included</p>
+                  <p className='tours-list-two__text'><FaPlane size={20} /> Airplane Bill Included</p>
+                  <p className='tours-list-three__text'><MdHome size={20} /> Daily Places Visit</p>
                   <button className='tours__btn'>Make A Reservation</button>
                 </li>
               </ul>
@@ -174,15 +181,15 @@ const Tours = () => {
               <ul className='tours__list'>
                 <li className='tours__item'>
                   <div className='tours__bg'>
-                    <img className='img__one' src={one} alt="Istanbul" />
+                    <img className='img__one' src={seven} alt="Canada" />
                   </div>
-                  <h3 className='tours-list__title'>Istanbul <span className='list__span'>420$</span></h3>
-                  <p className='tours-list__text'><FaUsers size={20}/> 234 Check Ins <span>/person</span></p>
+                  <h3 className='tours-list__title'>Canada <span className='list__span'></span></h3>
+                  <p className='tours-list__text'><FaUsers size={20} /> 345 Check Ins <span>/person</span></p>
                   <hr />
                   <p className='tours-list-one__title'>Deal Includes:</p>
-                  <p className='tours-list-one__text'><FaCar size={20}/> 5 Days Trip › Hotel Included</p>
-                  <p className='tours-list-two__text'><FaPlane size={20}/> Airplane Bill Included</p>
-                  <p className='tours-list-three__text'><MdHome size={20}/> Daily Places Visit</p>
+                  <p className='tours-list-one__text'><FaCar size={20} /> 5 Days Trip › Hotel Included</p>
+                  <p className='tours-list-two__text'><FaPlane size={20} /> Airplane Bill Included</p>
+                  <p className='tours-list-three__text'><MdHome size={20} /> Daily Places Visit</p>
                   <button className='tours__btn'>Make A Reservation</button>
                 </li>
               </ul>
@@ -193,21 +200,23 @@ const Tours = () => {
               <ul className='tours__list'>
                 <li className='tours__item'>
                   <div className='tours__bg'>
-                    <img className='img__one' src={one} alt="Istanbul" />
+                    <img className='img__one' src={eight} alt="Europe" />
                   </div>
-                  <h3 className='tours-list__title'>Istanbul <span className='list__span'>420$</span></h3>
-                  <p className='tours-list__text'><FaUsers size={20}/> 234 Check Ins <span>/person</span></p>
+                  <h3 className='tours-list__title'>European Union <span className='list__span'></span></h3>
+                  <p className='tours-list__text'><FaUsers size={20} /> 345 Check Ins <span>/person</span></p>
                   <hr />
                   <p className='tours-list-one__title'>Deal Includes:</p>
-                  <p className='tours-list-one__text'><FaCar size={20}/> 5 Days Trip › Hotel Included</p>
-                  <p className='tours-list-two__text'><FaPlane size={20}/> Airplane Bill Included</p>
-                  <p className='tours-list-three__text'><MdHome size={20}/> Daily Places Visit</p>
+                  <p className='tours-list-one__text'><FaCar size={20} /> 5 Days Trip › Hotel Included</p>
+                  <p className='tours-list-two__text'><FaPlane size={20} /> Airplane Bill Included</p>
+                  <p className='tours-list-three__text'><MdHome size={20} /> Daily Places Visit</p>
                   <button className='tours__btn'>Make A Reservation</button>
                 </li>
               </ul>
             </SwiperSlide>
-            <button ref={prevRef} className="swiper__btn prev-btn">←</button>
-            <button ref={nextRef} className="swiper__btn next-btn">→</button>
+            <div className='slider'>
+              <button ref={prevRef} className="swiper__btn prev-btn">←</button>
+              <button ref={nextRef} className="swiper__btn next-btn">→</button>
+            </div>
           </Swiper>
         </div>
       </div>

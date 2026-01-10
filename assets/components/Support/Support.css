@@ -1,8 +1,8 @@
-.tours {
-    margin-top: 50px;
+.support {
+    margin-top: 100px;
 }
 
-.tours__title {
+.support__title {
     font-family: "Montserrat";
     font-weight: 700;
     font-size: 35px;
@@ -10,7 +10,7 @@
     margin-bottom: 25px;
 }
 
-.tours__text {
+.support__text {
     font-family: "Montserrat";
     font-weight: 500;
     font-size: 17px;
@@ -21,14 +21,14 @@
     margin-left: 19%;
 }
 
-.tours__list {
+.support__list {
     margin-top: 150px;
     display: flex;
     justify-content: space-between;
     margin-bottom: 100px;
 }
 
-.tours__item {
+.support__item {
     width: 250px;
     height: 320px;
     background: rgb(255, 255, 255);
@@ -37,7 +37,7 @@
     border-radius: 25px;
 }
 
-.tours__btn {
+.support__btn {
     width: 180px;
     height: 40px;
     border-radius: 40px;
@@ -50,7 +50,7 @@
     margin-left: 35px;
 }
 
-.tours-list__title {
+.support-list__title {
     font-family: "Montserrat";
     font-weight: 700;
     font-size: 20px;
@@ -58,26 +58,7 @@
     margin-bottom: 10px;
 }
 
-.listt__span {
-    font-family: "Montserrat";
-    font-weight: 700;
-    font-size: 20px;
-    color: #22b3c1;
-}
-
-.list__span {
-    font-family: "Montserrat";
-    font-weight: 700;
-    font-size: 20px;
-    color: #22b3c1;
-    margin-left: 100px;
-}
-
-.tours__span {
-    margin-left: 35px;
-}
-
-.tours-list__text {
+.support-list__text {
     display: flex;
     align-items: center;
     gap: 15px;
@@ -89,7 +70,7 @@
     opacity: 0.4;
 }
 
-.tours-list-one__title {
+.support-list-one__title {
     font-family: "Montserrat";
     font-weight: 700;
     font-size: 15px;
@@ -97,7 +78,7 @@
     margin-bottom: 15px;
 }
 
-.tours-list-one__text {
+.support-list-one__text {
     align-items: center;
     display: flex;
     gap: 5px;
@@ -109,7 +90,7 @@
     margin-bottom: 15px;
 }
 
-.tours-list-two__text {
+.support-list-two__text {
     align-items: center;
     display: flex;
     gap: 5px;
@@ -121,7 +102,7 @@
     margin-bottom: 15px;
 }
 
-.tours-list-three__text {
+.support-list-three__text {
     align-items: center;
     display: flex;
     gap: 5px;
@@ -133,9 +114,9 @@
     margin-bottom: 40px;
 }
 
-.img__one {
+.support-img__one {
     width: 320px;
-    height: 360px;
+    height: 180px;
     position: absolute;
     margin-top: -70px;
     margin-left: -160px;
@@ -144,11 +125,11 @@
     z-index: -1;
 }
 
-.slider {
+.slider2 {
     text-align: center;
 }
 
-.swiper__btn {
+.swiper__btn2 {
     width: 50px;
     height: 50px;
     border-radius: 50px;
@@ -160,7 +141,7 @@
     border: 1px solid #22b3c1;
 }
 
-.swiper__btn:hover {
+.swiper__btn2:hover {
     background: #22b3c1;
     color: aliceblue;
 }

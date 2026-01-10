@@ -58,7 +58,8 @@
     font-size: 18px;
     font-family: "Montserrat";
 }
-.home__box{
+
+.home__box {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -68,18 +69,21 @@
     background: white;
     border-radius: 60px;
 }
-.home__item{
+
+.home__item {
     display: flex;
     align-items: center;
     gap: 20px;
 }
-.icon{
+
+.icon {
     color: #22b3c1;
     border: 1px solid #22b3c1;
     border-radius: 50px;
     padding: 10px;
 }
-.home-box__btn{
+
+.home-box__btn {
     width: 150px;
     height: 45px;
     border: none;
@@ -90,7 +94,8 @@
     font-weight: 400;
     font-size: 15px;
 }
-.icon__title{
+
+.icon__title {
     font-family: "Montserrat";
     font-weight: 400;
     font-size: 17px;
@@ -98,7 +103,8 @@
     opacity: 0.7;
     margin-bottom: 5px;
 }
-.icon__text{
+
+.icon__text {
     font-family: "Montserrat";
     font-weight: 600;
     font-size: 23px;
