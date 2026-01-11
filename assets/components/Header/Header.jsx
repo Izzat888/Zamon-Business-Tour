@@ -13,7 +13,7 @@ function Header() {
                             <a className='header-list__link' href='#home'>Home</a>
                         </li>
                         <li className='header__item'>
-                            <a className='header-list__link' href="#">About</a>
+                            <a className='header-list__link' href="#about">About</a>
                         </li>
                         <li className='header__item'>
                             <a className='header-list__link' href="#tours">Tours</a>

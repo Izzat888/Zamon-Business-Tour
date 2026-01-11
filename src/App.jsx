@@ -5,6 +5,7 @@ import Home from '../assets/components/Home/Home'
 import Header from '../assets/components/Header/Header' 
 import Tours from '../assets/components/Tours/Tours'
 import Support from '../assets/components/Support/Support'
+import About from '../assets/components/About/About'
 function App() {
   return (
     <>
@@ -16,6 +17,9 @@ function App() {
         <Tours />
       </section>
       <Support/>
+      <section id='about'>
+        <About/>
+      </section>
     </>
   )
 }

@@ -200,7 +200,7 @@ const Support = () => {
                 </div>
             </div>
         </div>
-        <hr />
+        <hr className='hr' />
         </>
     )
 }
