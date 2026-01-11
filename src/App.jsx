@@ -6,6 +6,8 @@ import Header from '../assets/components/Header/Header'
 import Tours from '../assets/components/Tours/Tours'
 import Support from '../assets/components/Support/Support'
 import About from '../assets/components/About/About'
+import Location from '../assets/components/Location/Location'
+import Contact from '../assets/components/Contact/Contact'
 function App() {
   return (
     <>
@@ -19,6 +21,10 @@ function App() {
       <Support/>
       <section id='about'>
         <About/>
+      </section>
+      <Location/>
+      <section id='contact'>
+        <Contact/>
       </section>
     </>
   )

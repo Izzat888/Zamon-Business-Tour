@@ -19,7 +19,7 @@ function Header() {
                             <a className='header-list__link' href="#tours">Tours</a>
                         </li>
                         <li className='header__item'>
-                            <a className='header-list__link' href="#">Contacts</a>
+                            <a className='header-list__link' href="#contact">Contacts</a>
                         </li>
                     </ul>
                     <div className='icon'>

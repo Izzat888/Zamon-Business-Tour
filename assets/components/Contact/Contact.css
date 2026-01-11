@@ -1,0 +1,107 @@
+.contact{
+    background-image: url("./images/metro.jpg");
+    height: 90vh;
+     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 30px;
+}
+.contact__box{
+    text-align: center;
+}
+.contact__title{
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 20px;
+    color: aliceblue;
+    margin-top: 34vh;
+    margin-bottom: 25px;
+}
+.contact__hr{
+    width: 100px;
+    display: inline-block;
+    color: black;
+    opacity: 0.4;
+    margin-bottom: 25px;
+}
+.contact__text{
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 60px;
+    color: aliceblue;
+    margin-bottom: 35px;
+}
+.contact__btn{
+    width: 150px;
+    height: 45px;
+    background: white;
+    color: #22b3c1;
+    border: none;
+    border-radius: 30px;
+    font-family: "Montserrat";
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 13vh;
+}
+.contact__btn:hover{
+    color:aliceblue;
+    background: #22b3c1;
+}
+.contact__list{
+    display: flex;
+    justify-content: space-between
+}
+.contact__item{
+    width: 350px;
+    height: 180px;
+    background: white;
+    text-align: center;
+    padding: 15px;
+    border-radius: 25px;
+    box-shadow: 1px 4px 2px 1px rgb(234, 233, 233);
+    margin-bottom: 50px;
+}
+.contact__icon{
+    margin-top: 15px;
+    color: #22b3c1;
+    padding: 20px;
+    border-radius: 50px;
+    background: rgb(233, 233, 233);
+    border: none;
+    margin-bottom: 20px;
+}
+.contact-list__title{
+    font-family: "Montserrat";
+    font-weight: 800;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.contact__link{
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 15xp;
+    color: #22b3c1;
+}
+.contact__maps{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+.map{
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+.contact-btns__title{
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    color:black;
+    margin-bottom: 50px;
+}
+.contact__span{
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 30px;
+    color: #22b3c1;
+}
