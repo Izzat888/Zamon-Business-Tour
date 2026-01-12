@@ -105,3 +105,261 @@
     font-size: 30px;
     color: #22b3c1;
 }
+/* ---------------------------------register--------------------------- */
+.register{
+    margin-bottom: 150px;
+}
+.register__container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+/* -----------------------------name-------------------- */
+.name{
+    display: block;
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 17px;
+    color: black;
+    opacity: 0.4;
+    margin-bottom: 10px;
+}
+.name__input{
+    width: 70vh;
+    height: 45px;
+    border: 1px solid rgb(177, 176, 176) ;
+    border-radius: 30px;
+    color: black;
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-weight: 600;
+    padding-left: 20px;
+    text-transform: capitalize;
+}
+.name__input::placeholder{
+    padding-left: 20px;
+    font-family: "Montserrat";
+    font-size: 15px;
+}
+/* --------------------------number------------------------ */
+.number{
+    display: block;
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 17px;
+    color: black;
+    opacity: 0.4;
+    margin-bottom: 10px;
+}
+.number__input{
+    width: 68vh;
+    height: 45px;
+    border: 1px solid rgb(177, 176, 176) ;
+    border-radius: 30px;
+    color: black;
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-weight: 600;
+    padding-left: 10px;
+}
+.number__input::placeholder{
+    padding-left: 20px;
+    font-family: "Montserrat";
+    font-size: 15px;
+}
+/* ----------------------guest--------------------- */
+.input__three{
+    position: relative;
+    z-index: 4;
+}
+.guest__dropdown {
+  position: absolute;
+padding-left: 5px;
+}
+.guest{
+    display: block;
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 17px;
+    color: black;
+    opacity: 0.4;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+.guest__input{
+    width: 68vh;
+    height: 45px;
+    border: 1px solid rgb(177, 176, 176) ;
+    border-radius: 30px;
+    font-family: "Montserrat";
+    font-size: 16px;
+    color: black;
+    font-weight: 600;
+    padding-left: 20px;
+}
+.guest__input::placeholder{
+    font-family: "Montserrat";
+    font-size: 15px;
+    color: black;
+    font-weight: 600;
+    padding-left: 20px;
+}
+.guests{
+    width: 70vh;
+    height: 30px;
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-weight: 500;
+    background: white;
+}
+.guests:hover{
+    background: #4a6cf5;
+    width: 70vh;
+}
+.guest__dropdown{
+border: 2px solid rgb(0, 0, 0) ;
+    width: 70vh;
+    height: 150px;
+}
+/* ----------------date---------------------- */
+.date{
+    display: block;
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 17px;
+    color: black;
+    opacity: 0.4;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+.date__input{
+    width: 69vh;
+    height: 45px;
+    border: 1px solid rgb(177, 176, 176) ;
+    border-radius: 30px;
+    padding-left: 20px;
+    font-family: "Montserrat";
+    font-size: 16px;
+    color: rgb(173, 173, 173);
+}
+/* -------------------region----------------- */
+.input__four{
+    position: relative;
+    z-index: 3;
+}
+.choos__dropdown{
+    position: absolute;
+}
+.choos{
+ display: block;
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 17px;
+    color: black;
+    opacity: 0.4;
+    margin-bottom: 10px;
+    margin-top: 25px;
+}
+.choos__input{
+      width: 98%;
+    height: 45px;
+    border: 1px solid rgb(177, 176, 176) ;
+    border-radius: 30px;
+    color: black;
+    font-size: 16px;
+    padding-left: 20px;
+    font-family: "Montserrat";
+    font-weight: 500;
+}
+.choos__dropdown{
+    border: 2px solid rgb(0, 0, 0) ;
+    width: 100%;
+    height: 270%;
+    padding-left: 10px;
+    background: white;
+}
+.choose{
+    width: 100%;
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-weight: 500;
+    background: white;
+    margin-bottom: 10px;
+}
+.choos__input::placeholder{
+    padding: 20px;
+    color: black;
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-weight: 600;
+}
+.choose:hover{
+    background: #4a6cf5;
+    width: 100%;
+}
+/* ------------------------visa------------- */
+.visa{
+    display: block;
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 17px;
+    color: black;
+    opacity: 0.4;
+    margin-bottom: 10px;
+    margin-top: 25px;
+}
+.visa__input{
+      width: 98%;
+    height: 45px;
+    border: 1px solid rgb(177, 176, 176) ;
+    border-radius: 30px;
+    color: black;
+    font-size: 16px;
+    padding-left: 20px;
+    font-family: "Montserrat";
+    font-weight: 500;
+}
+.visa__dropdown{
+    border: 2px solid rgb(0, 0, 0) ;
+    width: 100%;
+    height: 100%;
+    padding-left: 10px;
+}
+.vise{
+    width: 100%;
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-weight: 500;
+    background: white;
+    margin-bottom: 10px;
+}
+.visa__input::placeholder{
+    padding: 20px;
+    color: black;
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-weight: 600;
+}
+.vise:hover{
+    background: #4a6cf5;
+    width: 100%;
+}
+/* ------------------------button---------------- */
+.btn{
+    width: 100%;
+    height: 45px;
+    border-radius: 30px;
+    background: #22b3c1;
+    color: white;
+    border: none;
+    margin-top: 25px;
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-weight: 600;
+}
+.btn:hover{
+    background: white;
+    color: #22b3c1;
+    border: 1px solid #22b3c1
+}
