@@ -171,7 +171,7 @@
 /* ----------------------guest--------------------- */
 .input__three{
     position: relative;
-    z-index: 4;
+    z-index: 5;
 }
 .guest__dropdown {
   position: absolute;
@@ -246,7 +246,7 @@ border: 2px solid rgb(0, 0, 0) ;
 /* -------------------region----------------- */
 .input__four{
     position: relative;
-    z-index: 3;
+    z-index: 4;
 }
 .choos__dropdown{
     position: absolute;
@@ -299,6 +299,10 @@ border: 2px solid rgb(0, 0, 0) ;
     width: 100%;
 }
 /* ------------------------visa------------- */
+.input__five{
+     position: relative;
+    z-index: 3;
+}
 .visa{
     display: block;
     font-family: "Montserrat";
@@ -325,6 +329,7 @@ border: 2px solid rgb(0, 0, 0) ;
     width: 100%;
     height: 100%;
     padding-left: 10px;
+    background: white;
 }
 .vise{
     width: 100%;

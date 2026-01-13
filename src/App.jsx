@@ -8,6 +8,7 @@ import Support from '../assets/components/Support/Support'
 import About from '../assets/components/About/About'
 import Location from '../assets/components/Location/Location'
 import Contact from '../assets/components/Contact/Contact'
+import Footer from '../assets/components/Footer/Footer'
 function App() {
   return (
     <>
@@ -26,6 +27,7 @@ function App() {
       <section id='contact'>
         <Contact/>
       </section>
+      <Footer/>
     </>
   )
 }

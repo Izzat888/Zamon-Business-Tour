@@ -1,0 +1,71 @@
+.footer {
+    position: relative;
+    height: 40vh;
+    background-image: url("./images/travel.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 95%;
+    overflow: hidden;
+}
+
+.footer::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(34, 179, 193, 0.6);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    z-index: 1;
+}
+.footer * {
+    position: relative;
+    z-index: 2;
+}
+.footer__list{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+.footer__title{
+    font-family: "Montserrat";
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 15px;
+}
+.footer__text{
+    font-family: "Montserrat";
+    font-size: 25px;
+    font-weight: 500;
+    color: white;
+}
+.footer__btn{
+    width: 180px;
+    height: 45px;
+    border: 2px solid white;
+    border-radius: 30px;
+    background: #22b3c1;
+    color: white;
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-weight: 500;
+}
+.footer__btn:hover{
+   border: 2px solid #22b3c1;
+   color: #22b3c1;
+   background: white;
+}
+.footer__box{
+    background: #22b3c1;
+}
+.footer__box{
+    text-align: center;
+}
+.footer__link{
+    font-family: "Montserrat";
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+}

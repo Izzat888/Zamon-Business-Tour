@@ -1,16 +1,47 @@
 import React, { useState } from 'react';
 import "./Contact.css";
 import { FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+import axios from 'axios';
 
 const Contact = () => {
     const [open, setOpen] = useState(false);
-    const [value, setValue] = useState("");
 
     const [region, setRegion] = useState(false);
-    const [modal, setModal] = useState("");
 
     const [visa, setVisa] = useState(false)
-    const [support, setSupport] = useState("")
+
+    const [name, setName] = useState("");
+    const [telephone, setTelephone] = useState("");
+    const [guests, setGuests] = useState("");
+    const [date, setDate] = useState("");
+    const [destination, setDestination] = useState("");
+    const [vise, setVise] = useState("");
+
+    const sendMessage = (e) => {
+        e.preventDefault();
+
+        const token = "8525190160:AAGZkVzB6-zwfCtWONTFjI7Oqb7JKsjeiJo"
+        const chat_id = 1319144600
+
+        const url = `https://api.telegram.org/bot${token}/sendMessage`;
+        const text = `Ism: ${name};\n Telefon: ${telephone};\n Guests: ${guests};\n Date: ${date};\n Destination: ${destination};\n Vise: ${vise};\n`
+
+        axios.post(url, {
+            chat_id: chat_id,
+            text: text
+        }).then(() => {
+            alert(" Arizangiz muvaffiqiyatli jo'natildi.✅")
+            setName("")
+            setTelephone("")
+            setGuests("")
+            setDate("")
+            setDestination("")
+            setVise("")
+        }).catch(() => {
+            console.log("Noto'g'ri ma'lumot kiritingiz ❌");
+
+        })
+    }
 
     const options = ["ex. 3 or 4 or 5", "1", "2", "3", "4+"];
 
@@ -69,20 +100,7 @@ const Contact = () => {
                             Make Your <span className='contact__span'>Reservation</span> Through This <span className='contact__span'>Form</span>
                         </h4>
 
-                        <form className='form' action="#" onSubmit={(e) => {
-                            e.preventDefault(); 
-
-                            if (
-                                value && 
-                                modal &&       
-                                support &&
-                                document.getElementById("name").value.trim() !== "" &&
-                                document.getElementById("phone").value.trim() !== "" &&
-                                document.getElementById("date").value.trim() !== ""
-                            ) {
-                                alert("Aloqaga chiqamiz ✅");
-                            }
-                        }}>
+                        <form className='form' action="#" onSubmit={sendMessage}>
 
 
                             <div className='register__container'>
@@ -90,47 +108,47 @@ const Contact = () => {
                                 {/* Your Name */}
                                 <div className='input__one'>
                                     <label className='name' htmlFor="name">Your name</label>
-                                    <input className='name__input' type="text" id="name" placeholder='Ex. John Smithee' required />
+                                    <input className='name__input' type="text" id="name" placeholder='Ex. John Smithee' onChange={(e) => setName(e.target.value)} value={name} required />
                                 </div>
 
                                 {/* Phone Number */}
                                 <div className='input__two'>
                                     <label className='number' htmlFor="phone">Your Phone Number</label>
-                                    <input className='number__input' type="text" id="phone" placeholder='Ex. +99899 999 99 99' required />
+                                    <input className='number__input' onChange={(e) => setTelephone(e.target.value)} type="text" id="phone" placeholder='Ex. +99899 999 99 99' value={telephone} required />
                                 </div>
 
                                 {/* Number of Guests (Dropdown) */}
                                 <div className='input__three' style={{ position: "relative" }}>
                                     <label className='guest' htmlFor="guests">Number Of Guests</label>
-                                    <input id="guests" className='guest__input' value={value} placeholder='Ex. 3 or 4 or 5' readOnly required onClick={() => setOpen(!open)} />
+                                    <input id="guests" className='guest__input' onChange={(e) => setGuests(e.target.value)} value={guests} placeholder='Ex. 3 or 4 or 5' readOnly required onClick={() => setOpen(!open)} />
                                     {open && (
                                         <ul className='guest__dropdown'> {options.map((opt) => (
-                                            <li className='guests' key={opt} onClick={() => { setValue(opt); setOpen(false); }}> {opt}</li>))}
+                                            <li className='guests' key={opt} onClick={() => { setGuests(opt); setOpen(false); }}> {opt}</li>))}
                                         </ul>
                                     )}
                                 </div>
                                 {/* data */}
                                 <div className='input__four'>
                                     <label className='date' htmlFor="date">Check In Date</label>
-                                    <input className='date__input' type="date" id='date' required />
+                                    <input className='date__input' type="date" id='date' onChange={(e) => setDate(e.target.value)} value={date} required />
                                 </div>
                             </div>
                             {/* region */}
                             <div className='input__four' style={{ position: "relative" }}>
                                 <label className='choos' htmlFor="choose">Choose Your Destination</label>
-                                <input id="choose" className='choos__input' value={modal} placeholder='Antalya' readOnly required onClick={() => setRegion(!region)} />
+                                <input id="choose" className='choos__input' value={destination} onChange={(e) => setDestination(e.target.value)} placeholder='Antalya' readOnly required onClick={() => setRegion(!region)} />
                                 {region && (
                                     <ul className='choos__dropdown'> {opttionss.map((opt) => (
-                                        <li className='choose' key={opt} onClick={() => { setModal(opt); setRegion(false); }}> {opt}</li>))}
+                                        <li className='choose' key={opt} onClick={() => { setDestination(opt); setRegion(false); }}> {opt}</li>))}
                                     </ul>)}
                             </div>
                             {/* Visa */}
                             <div className='input__five' style={{ position: "relative" }}>
-                                <label className='visa' htmlFor="visa">Choose Your Destination</label>
-                                <input id="vise" className='visa__input' value={support} placeholder='Country' readOnly required onClick={() => setVisa(!visa)} />
+                                <label className='visa' htmlFor="visa">Choose Your Visa Support</label>
+                                <input id="vise" className='visa__input' value={vise} onChange={(e) => setVise(e.target.value)} placeholder='Country' readOnly required onClick={() => setVisa(!visa)} />
                                 {visa && (
                                     <ul className='visa__dropdown'> {option.map((opt) => (
-                                        <li className='vise' key={opt} onClick={() => { setSupport(opt); setVisa(false); }}> {opt}</li>))}
+                                        <li className='vise' key={opt} onClick={() => { setVise(opt); setVisa(false); }}> {opt}</li>))}
                                     </ul>)}
                             </div>
                             {/* button */}
