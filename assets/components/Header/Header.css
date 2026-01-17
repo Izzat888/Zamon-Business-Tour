@@ -188,12 +188,12 @@
         display: none;
     }
 }
-@media(max-width:540px){
+@media(max-width:550px){
     .modal-overlay{
-        width: 540px;
+        width: 550px;
     }
     .header{
-        width: 538px;
+        width: 548px;
     }
     .header__list{
         display: none;
@@ -222,12 +222,12 @@
         display: none;
     }
 }
-@media (max-width:410px){
+@media (max-width:412px){
      .modal-overlay{
-        width: 410px;
+        width: 412px;
     }
     .header{
-        width: 409px;
+        width: 412px;
     }
     .header__list{
         display: none;
