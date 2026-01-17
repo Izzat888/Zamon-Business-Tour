@@ -27,7 +27,7 @@
     cursor: pointer;
 }
 
-.icon {
+.icons {
     display: flex;
     gap: 20px;
 }
@@ -53,6 +53,7 @@
     cursor: pointer;
     transition: transform 0.25s ease;
     display: none;
+    margin-right: 30px;
 }
 
 .bars:active {
@@ -136,19 +137,25 @@
     }
 }
 @media (max-width: 990px){
+    .header{
+        width: 990px;
+    }
    .header__list{
     display: none;
    }
     .bars{
         display: block;
     }
-    .icon{
+    .icons{
         display: none;
     }
 }
 @media (max-width: 768px) {
+    .header{
+        width: 768px;
+    }
     .header__list,
-    .icon {
+    .icons {
         display: none;
     }
 
@@ -157,13 +164,30 @@
     }
 }
 @media( max-width:670px){
+    .header{
+        width: 670px;
+    }
     .header__list{
         display: none;
     }
     .bars{
         display: block;
     }
-    .icon{
+    .icons{
+        display: none;
+    }
+}
+@media(max-width:550px){
+    .header{
+        width: 550px;
+    }
+    .header__list{
+        display: none;
+    }
+    .bars{
+        display: block;
+    }
+    .icons{
         display: none;
     }
 }

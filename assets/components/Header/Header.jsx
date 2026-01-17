@@ -25,7 +25,7 @@ function Header() {
                                 <a className='header-list__link' href="#contact">Contacts</a>
                             </li>
                         </ul>
-                        <div className='icon'>
+                        <div className='icons'>
                             <a className='header-icon__link' href="#"><FaTelegram size={24} /></a>
                             <a className='header-icon__link' href="#"><FaInstagram size={24} /></a>
                         </div>
