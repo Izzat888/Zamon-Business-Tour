@@ -222,3 +222,37 @@
         display: none;
     }
 }
+@media (max-width:410px){
+     .modal-overlay{
+        width: 410px;
+    }
+    .header{
+        width: 409px;
+    }
+    .header__list{
+        display: none;
+    }
+    .bars{
+        display: block;
+    }
+    .icons{
+        display: none;
+    }
+}
+@media (max-width:360px){
+     .modal-overlay{
+        width: 360px;
+    }
+    .header{
+        width: 359px;
+    }
+    .header__list{
+        display: none;
+    }
+    .bars{
+        display: block;
+    }
+    .icons{
+        display: none;
+    }
+}
