@@ -36,7 +36,7 @@ const Tours = () => {
             Discover the best weekly offers in each city, curated just for you. Immerse yourself in a world of savings and indulge in unparalleled experiences.
           </p>
 
-          <Swiper
+          <Swiper className='swiper'
             modules={[Autoplay, Navigation]}
             spaceBetween={170}
             slidesPerView={3}
@@ -48,9 +48,9 @@ const Tours = () => {
 
             navigation={swiperReady ? { prevEl: prevRef.current, nextEl: nextRef.current } : false}
             breakpoints={{
-              320: { slidesPerView: 1 },
+              360: { slidesPerView: 1 },
               768: { slidesPerView: 2 },
-              1024: { slidesPerView: 3 },
+              990: { slidesPerView: 3 },
             }}
             onSwiper={(swiper) => {
 
@@ -63,7 +63,7 @@ const Tours = () => {
             }}
           >
             {/* 1box */}
-            <SwiperSlide style={{ width: "370px", height: "550px" }} data-hash="slide1">
+            <SwiperSlide className='swiperslide' style={{ width: "370px", height: "550px" }} data-hash="slide1">
               <ul className='tours__list'>
                 <li className='tours__item'>
                   <div className='tours__bg'>
@@ -82,7 +82,7 @@ const Tours = () => {
             </SwiperSlide>
 
             {/* 2box */}
-            <SwiperSlide style={{ width: "370px", height: "400px" }} data-hash="slide2">
+            <SwiperSlide className='swiperslide' style={{ width: "370px", height: "400px" }} data-hash="slide2">
               <ul className='tours__list'>
                 <li className='tours__item'>
                   <div className='tours__bg'>
@@ -101,7 +101,7 @@ const Tours = () => {
             </SwiperSlide>
 
             {/* 3box */}
-            <SwiperSlide style={{ width: "370px", height: "400px" }} data-hash="slide3">
+            <SwiperSlide className='swiperslide' style={{ width: "370px", height: "400px" }} data-hash="slide3">
               <ul className='tours__list'>
                 <li className='tours__item'>
                   <div className='tours__bg'>
@@ -120,7 +120,7 @@ const Tours = () => {
             </SwiperSlide>
 
             {/* 4box */}
-            <SwiperSlide style={{ width: "370px", height: "400px" }} data-hash="slide4">
+            <SwiperSlide className='swiperslide' style={{ width: "370px", height: "400px" }} data-hash="slide4">
               <ul className='tours__list'>
                 <li className='tours__item'>
                   <div className='tours__bg'>
@@ -139,7 +139,7 @@ const Tours = () => {
             </SwiperSlide>
 
             {/* 5box */}
-            <SwiperSlide style={{ width: "370px", height: "400px" }} data-hash="slide5">
+            <SwiperSlide className='swiperslide' style={{ width: "370px", height: "400px" }} data-hash="slide5">
               <ul className='tours__list'>
                 <li className='tours__item'>
                   <div className='tours__bg'>
@@ -158,7 +158,7 @@ const Tours = () => {
             </SwiperSlide>
 
             {/* 6box */}
-            <SwiperSlide style={{ width: "370px", height: "400px" }} data-hash="slide6">
+            <SwiperSlide className='swiperslide' style={{ width: "370px", height: "400px" }} data-hash="slide6">
               <ul className='tours__list'>
                 <li className='tours__item'>
                   <div className='tours__bg'>
@@ -177,7 +177,7 @@ const Tours = () => {
             </SwiperSlide>
 
             {/* 7box */}
-            <SwiperSlide style={{ width: "370px", height: "400px" }} data-hash="slide7">
+            <SwiperSlide className='swiperslide' style={{ width: "370px", height: "400px" }} data-hash="slide7">
               <ul className='tours__list'>
                 <li className='tours__item'>
                   <div className='tours__bg'>
@@ -196,7 +196,7 @@ const Tours = () => {
             </SwiperSlide>
 
             {/* 8box */}
-            <SwiperSlide style={{ width: "370px", height: "400px" }} data-hash="slide8">
+            <SwiperSlide className='swiperslide' style={{ width: "370px", height: "400px" }} data-hash="slide8">
               <ul className='tours__list'>
                 <li className='tours__item'>
                   <div className='tours__bg'>

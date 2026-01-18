@@ -47,8 +47,8 @@ const Support = () => {
                         navigation={swiperReady ? { prevEl: prevRef.current, nextEl: nextRef.current } : false}
                         breakpoints={{
                             320: { slidesPerView: 1 },
-                            768: { slidesPerView: 2 },
-                            1024: { slidesPerView: 3 },
+                            768: { slidesPerView: 1 },
+                            990: { slidesPerView: 3 },
                         }}
                         onSwiper={(swiper) => {
                             // Ref elementlar render bo‘lgandan keyin navigation ishlaydi

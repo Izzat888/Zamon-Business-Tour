@@ -263,12 +263,13 @@
         height: 200px;
         padding: 15px;
         gap: 15px;
-       
+       margin-left: 40px;
     }
     .home-box__btn {
         margin-top: 15px;
         margin-left: 10px;
         width: 150px;
+        height: 50px;
     }
 }
 @media (max-width:480px){
@@ -310,6 +311,7 @@
         height: 200px;
         padding: 15px;
         gap: 15px;
+        margin-left: 5px;
        
     }
     .home-box__btn {
