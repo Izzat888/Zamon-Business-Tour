@@ -368,4 +368,152 @@ border: 2px solid rgb(0, 0, 0) ;
     color: #22b3c1;
     border: 1px solid #22b3c1
 }
-/* . */
+/* --------------------------------responsiv------------------------ */
+@media(max-width:990px){
+    .contact__container{
+        width: 990px;
+    }
+    .contact__list{
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .contact__item{
+        margin-right: 50px;
+    }
+    .map{
+        width: 700px;
+        height: 500px;
+        margin-left: -50px;
+    }
+    .contact-btns__title{
+        width: 600px;
+        margin-left: 17%;
+    }
+    .name, .number, .guest, .date{
+        margin-left: 18%;
+    }
+    .name__input, .number__input,
+    .guest__input, .date__input{
+        width: 650px;
+        margin-left: 17%;
+    }
+    .choos__input, .visa__input{
+        width: 650px;
+        margin-left: 12%;
+    }
+    .choos, .visa{
+        margin-left: 12%;
+    }
+    .btn{
+        width: 670px;
+        margin-left: 12%;
+    }
+}
+@media (max-width: 768px) {
+    .contact__container{
+        width: 100%;
+    }
+    .contact__list{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .contact__item{
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+    .map{
+        width: 100%;
+        height: 400px;
+        margin-left: 0;
+    }
+    .contact-btns__title{
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+    .name, .number, .guest, .date{
+        margin-left: 0;
+    }
+    .name__input, .number__input,
+    .guest__input, .date__input{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .choos__input, .visa__input,
+    .choos, .visa{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .btn{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+}
+@media (max-width: 670px) {
+    .map{
+        height: 350px;
+    }
+    .contact-btns__title{
+        font-size: 22px;
+    }
+    .btn{
+        font-size: 16px;
+    }
+}
+@media (max-width: 550px) {
+    .map{
+        height: 280px;
+    }
+    .contact-btns__title{
+        font-size: 20px;
+    }
+    .name__input, .number__input,
+    .guest__input, .date__input,
+    .choos__input, .visa__input,
+    .btn{
+        width: 95%;
+    }
+}
+@media (max-width: 480px) {
+    .map{
+        height: 240px;
+    }
+    .contact-btns__title{
+        font-size: 18px;
+        line-height: 1.4;
+    }
+    .name__input, .number__input,
+    .guest__input, .date__input,
+    .choos__input, .visa__input,
+    .btn{
+        width: 100%;
+    }
+}
+@media (max-width: 412px) {
+    .map{
+        height: 220px;
+    }
+    .contact-btns__title{
+        font-size: 17px;
+    }
+    .btn{
+        font-size: 15px;
+        padding: 14px;
+    }
+}
+@media (max-width: 360px) {
+    .map{
+        height: 200px;
+    }
+    .contact-btns__title{
+        font-size: 16px;
+    }
+    .btn{
+        font-size: 14px;
+        padding: 12px;
+    }
+}

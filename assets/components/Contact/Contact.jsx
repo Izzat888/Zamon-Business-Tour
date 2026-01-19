@@ -154,7 +154,7 @@ const Contact = () => {
                             {/* button */}
                             <button type='submit' className='btn'>Make Your Reservation Now</button>
                         </form>
-                    </div>
+                    </div> 
 
                 </div>
             </div>
